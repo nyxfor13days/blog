@@ -1,0 +1,53 @@
+---
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props as Props;
+---
+
+<!-- TODO: update the images on meta tags -->
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="generator" content={Astro.generator} />
+  <meta name="description" content={description} />
+  <meta
+    name="keywords"
+    content="Nyxfor13days, software engineer, entrepreneur, lifestyle, programming, tech, motivation, blog"
+  />
+  <meta name="author" content="Nyxfor13days" />
+  <!-- Facebook Open Graph tags -->
+  <meta
+    property="og:title"
+    content="Nyxfor13days - A blog about lifestyle, programming, latest tech, and motivation"
+  />
+  <meta
+    property="og:description"
+    content="Nyxfor13days is a software engineer and entrepreneur who writes about lifestyle, programming, latest tech, and motivation. Stay up-to-date with his latest blog posts."
+  />
+  <meta
+    property="og:image"
+    content="https://example.com/images/nyxfor13days-blog.jpg"
+  />
+  <meta property="og:url" content="https://example.com/nyxfor13days" />
+  <!-- Twitter Card tags -->
+  <meta name="twitter:card" content="summary" />
+  <meta
+    name="twitter:title"
+    content="Nyxfor13days - A blog about lifestyle, programming, latest tech, and motivation"
+  />
+  <meta
+    name="twitter:description"
+    content="Nyxfor13days is a software engineer and entrepreneur who writes about lifestyle, programming, latest tech, and motivation. Stay up-to-date with his latest blog posts."
+  />
+  <meta
+    name="twitter:image"
+    content="https://example.com/images/nyxfor13days-blog.jpg"
+  />
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://example.com/nyxfor13days" />
+  <title>{title}</title>
+</head>

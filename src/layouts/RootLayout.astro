@@ -1,0 +1,20 @@
+---
+import Head from "./Head.astro";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Nyxfor13days - A blog about lifestyle, programming, latest tech, and motivation",
+  description = "Nyxfor13days is a software engineer and entrepreneur who writes about lifestyle, programming, latest tech, and motivation. Stay up-to-date with his latest blog posts.",
+} = Astro.props as Props;
+---
+
+<html lang="en">
+  <Head {title} {description} />
+  <body>
+    <slot />
+  </body>
+</html>
