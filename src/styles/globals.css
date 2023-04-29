@@ -7,7 +7,23 @@
     @apply bg-primary-100 text-primary-950 dark:bg-primary-950 dark:text-primary-200 font-sans;
   }
 
+  body::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  body::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    @apply bg-gray-500 dark:bg-gray-800 rounded shadow;
+  }
+
   [astro-icon] {
     @apply w-12 h-12 text-inherit fill-inherit;
+  }
+
+  a {
+    @apply hover:text-secondary-900 dark:hover:text-secondary-500 transition-colors duration-200;
   }
 }
