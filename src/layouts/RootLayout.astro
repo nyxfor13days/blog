@@ -1,5 +1,6 @@
 ---
 import Head from "./Head.astro";
+import "../styles/globals.css";
 
 interface Props {
   title?: string;
@@ -12,9 +13,9 @@ const {
 } = Astro.props as Props;
 ---
 
-<html lang="en">
+<html lang="en" class="dark">
   <Head {title} {description} />
-  <body>
+  <body class="container">
     <slot />
   </body>
 </html>
