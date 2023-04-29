@@ -6,4 +6,8 @@
   body {
     @apply bg-primary-100 text-primary-950 dark:bg-primary-950 dark:text-primary-200 font-sans;
   }
+
+  [astro-icon] {
+    @apply w-12 h-12 text-inherit fill-inherit;
+  }
 }
