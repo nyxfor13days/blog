@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       colors: ({ colors }) => ({
         primary: colors.gray,
+        secondary: colors.blue,
       }),
       fontFamily: {
         sans: ["Inter", "sans-serif"],
