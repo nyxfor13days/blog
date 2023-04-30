@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    @apply text-sm antialiased;
+  }
+
   body {
     @apply bg-primary-100 text-primary-950 dark:bg-primary-950 dark:text-primary-200 font-sans;
   }
